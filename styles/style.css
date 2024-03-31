@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1440px;
+   max-width: 1440px;
 }
 
 /* common style */
@@ -264,9 +264,21 @@ footer{
 
 /* mobile device responsive */
 @media screen and (max-width:576px) {
-    nav
-    {
-        flex-direction: column;
+    nav, .banner-section, .featured-contaner   {
+        flex-direction: column-reverse;
+    }
+    .company-logo{
+        flex-wrap: wrap;
     }
 
+    .collection-contaner{
+        padding: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .featured-contaner{
+        padding: 0;
+        width: 0;
+       
+    }
 }
