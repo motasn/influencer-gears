@@ -1,106 +1,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
- 
+
 * {
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    
+    width: 1440px;
 }
 
 
 /* header section style */
-header{
-   margin: 2rem 3rem ;
-   max-width: 1440px;
-   
+header {
+    margin: 2rem 3rem;
+   padding: 60px 100px ;
+ 
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h3{color: #3A3A3A;
+nav h3 {
+    color: #3A3A3A;
     font-size: 1.2rem;
     font-style: normal;
-    font-weight: 700;}
+    font-weight: 700;
+}
 
 nav ul {
-   display: flex;
-   gap: 20px;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-nav ul img{ 
+nav ul img {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 nav li a {
-   text-decoration: none;
-  
+    text-decoration: none;
+
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     color: #3A3A3A;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
 }
+ 
+/* main section style */
+main{
+    margin: 2rem 3rem;
+    padding: 60px 100px ;
+}
 
 /* banner-section style */
 
-.banner-section{
+.banner-section {
     display: flex;
-    max-width: 1440px;
-    margin: 2rem 3rem ;
-    max-width: 1440px;
+    margin: 2rem 3rem;
     justify-content: space-between;
     align-items: center;
+    gap: 130px;
 }
 
-.banner-text h2{
+.banner-text h2 {
     color: #3A3A3A;
-font-size: 3rem;
-font-weight: 700;
-line-height: 70px; 
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 70px;
+    width: 582px;
+    height: 133px;
+
 }
 
-.banner-text p{
+.banner-text p {
     color: #3A3A3A;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    width: 505px;
+    height: 60.9px;
+
 }
 
-.banner-text .btn-praimry{
+.banner-text .btn-praimry {
     border-radius: 41px;
-background: #E02C6D;
-padding: 10px 24px;
-align-items: flex-start;
-gap: 8px;
-border: 0;
-color: #FFF;
-font-size: 16px;
-font-weight: 700;
-
-
+    background: #E02C6D;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
-.banner-text .btn-praimry .btn-text {
+.banner-text .btn-praimry img {
     display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+
 }
 
-.banner-img{
-    margin-left:100px ;
-background-image: url('../images/Circle\ design.svg');
+.banner-img img {
+    object-fit: cover;
+    width: 440px;
+    height: 414px;
+    padding:20px ;
+}
+
+.banner-img {
+    background-image: url('../images/Circle\ design.svg');
+    width: 475px;
+    height: 475px;
+}
+
+
+/* company-logo style */
+
+.company-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.company-logo img{
+    padding: 30px;
+}
+
+/* collection section */
+.collection-contaner{
+display: flex;
+}
+.card-text{
+    width: 329px;
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-text img{
+   
+border-radius: 5px;
+padding:15px ;
+}
+
+.card-text h4 {
+    color: var(--Text-Gray-900, #18191F);
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+padding-left: 30px;
+}
+
+#price{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+padding-left: 30px ;
+}
+.card-text p{
+    color: var(--Gray-50, #787885);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-bottom:10px ;
+}
+
+
+
+
+
+
+
+/* mobile device responsive */
+@media screen and (max-width:576px) {
+
 }
